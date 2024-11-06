@@ -1,126 +1,101 @@
-## Selenium
+ ## Selenium
 
-Es una herramienta de **automatización de pruebas** de código abierto diseñada para probar aplicaciones web. Permite a los testers y desarrolladores crear scripts para automatizar las interacciones de usuario en navegadores como Chrome, Firefox, Safari, y Edge, simulando acciones como clics, entrada de texto y navegación entre páginas.
+Is an open source **test automation** tool designed for testing web applications. It allows testers and developers to create scripts to automate user interactions in browsers such as Chrome, Firefox, Safari, and Edge, simulating actions such as clicks, text input, and navigation between pages.
 
-### Componentes principales de Selenium
-
-- **Selenium WebDriver**: Es una **librería** que permite escribir scripts en varios lenguajes de programación (como Java, Python, C#, y JavaScript) y controlar el navegador directamente. Es ideal para pruebas funcionales y de interfaz de usuario en aplicaciones web.
+ ### Selenium's main components
+-  Selenium WebDriver**: It is a **library** that allows you to write scripts in several programming languages (such as Java, Python, C#, and JavaScript) and control the browser directly. It is ideal for functional and user interface testing in web applications.
     
-- **Selenium IDE**: Una **herramienta de grabación y reproducción** de pruebas que permite a los usuarios crear scripts sin necesidad de escribir código. Es útil para crear scripts rápidos, pero con funcionalidades limitadas.
+-  Selenium IDE**: A **record and playback** testing  tool that allows users to create scripts without writing code. It is useful for creating quick scripts, but with limited functionality.
     
-- **Selenium Grid**: Permite ejecutar pruebas en varios navegadores y sistemas operativos simultáneamente. Es útil para realizar pruebas de compatibilidad en distintos entornos y acelerar el tiempo de ejecución de las pruebas.
+-  Selenium Grid**: Allows tests to be run on multiple browsers and operating systems simultaneously. It is useful for compatibility testing in different environments and speeding up test execution time.
 
-### Pruebas automatizadas con Selenium Web Driver
-Automatizar tareas repetitivas y garantizar que una aplicación web funcione correctamente después de cada cambio en el código, permite ganar tiempo, detectar errores más rápido, y asegurar la estabilidad de la aplicación en múltiples navegadores y dispositivos. 
 
-#### Tipos de pruebas
-- **Pruebas Funcionales:**
-Estas pruebas verifican que las funcionalidades de la aplicación se comporten según lo esperado. Por ejemplo, asegurarse de que un formulario de inicio de sesión permita acceder correctamente al sistema.
+ ### Automated testing with Selenium Web Driver
+Automating repetitive tasks and ensuring that a web application works correctly after every code change saves time, detects errors faster, and ensures application stability across multiple browsers and devices. 
 
-- **Pruebas de Regresión:**
-Las pruebas de regresión son aquellas que se realizan cada vez que se hace un cambio en el código para asegurar que las funcionalidades existentes no se vean afectadas. Selenium es ideal para realizar este tipo de pruebas, ya que automatiza el proceso de verificación en cada versión.
+ #### Types of tests
+-  Functional Tests:** ** Functional Tests
+These tests verify that the application's functionalities behave as expected. For example, making sure that a login form allows correct access to the system.
+-  Regression Tests:** Regression tests:** Regression tests are those that  verify that the application's functionality behaves as expected.
+Regression tests are those that are performed every time a change is made to the code to ensure that existing functionality is not affected. Selenium is ideal for this type of testing as it automates the verification process for each release.
+-  Integration Testing
+Integration tests verify that the modules of an application work together. For example, that the login, navigation and dashboard access are correctly integrated into the system.
 
-- **Pruebas de Integración:**
-Las pruebas de integración verifican que los módulos de una aplicación funcionen en conjunto. Por ejemplo, que el inicio de sesión, la navegación y el acceso al dashboard se integren correctamente en el sistema.
+ - **Browser Compatibility Testing:**
+Selenium allows you to run tests in different browsers (Chrome, Firefox, Edge, Safari), which is essential to ensure that the application works correctly in all environments.
 
-- **Pruebas de Compatibilidad de Navegadores:**
-Selenium permite ejecutar pruebas en diferentes navegadores (Chrome, Firefox, Edge, Safari), lo que es esencial para asegurarse de que la aplicación funcione correctamente en todos los entornos.
 
 ## Gradle
+Tool for managing the building, testing, packaging and deployment of applications. 
 
-Herramienta para gestionar la construcción, prueba, empaquetado y despliegue de aplicaciones. 
-### Cómo Funciona Gradle
+### How Gradle Works
+-  Build Scripts (`build.gradle`)**: Gradle projects are configured through script files called `build.gradle` (for Groovy) or `build.gradle.kts` (for Kotlin). In these files, tasks such as compiling, testing, packaging or running the application are defined.
+-  Tasks**: Gradle organizes the build process into `tasks`, which are individual actions, such as compiling the code or running tests. You can execute specific tasks (e.g. `gradle build`, `gradle test`) or group them into workflows.
+-  Dependencies**: In the configuration file, you can specify external dependencies that Gradle will automatically download. This allows you to manage library versions and facilitates the maintenance of dependencies in the project.
 
-- **Build Scripts (`build.gradle`)**: Los proyectos en Gradle se configuran a través de archivos de script llamados `build.gradle` (para Groovy) o `build.gradle.kts` (para Kotlin). En estos archivos, se definen tareas como compilar, probar, empaquetar o ejecutar la aplicación.
-- **Tareas**: Gradle organiza el proceso de construcción en “tareas” (`tasks`), que son acciones individuales, como compilar el código o ejecutar pruebas. Puedes ejecutar tareas específicas (ej. `gradle build`, `gradle test`) o agruparlas en flujos de trabajo.
-- **Dependencias**: En el archivo de configuración, puedes especificar dependencias externas que Gradle descargará automáticamente. Esto permite gestionar versiones de librerías y facilita el mantenimiento de dependencias en el proyecto.
-
-
-### Ventajas y Desventajas de Selenium WebDriver
-
-**Ventajas:**
-
-- Flexibilidad: Soporta múltiples lenguajes y navegadores.
-
-- Automatización Rápida: Permite ejecutar muchas pruebas en paralelo y en menor tiempo.
-
-- Integración: Compatible con herramientas de CI/CD como Jenkins para integrar las pruebas en el flujo de desarrollo.
-
-**Desventajas:**
-
-- Limitación a Aplicaciones Web: Selenium solo puede automatizar aplicaciones en navegadores web, no aplicaciones de escritorio.
-
-- Mantenimiento: Las pruebas pueden romperse si la interfaz de usuario cambia, lo que requiere un mantenimiento constante de los scripts.
-
-- Curva de Aprendizaje: Requiere conocimientos de programación y comprensión de la arquitectura web.
+ ### Advantages and Disadvantages of Selenium WebDriver
+Advantages:** **
+- Flexibility: Supports multiple languages and browsers.
+- Fast Automation: Allows to run many tests in parallel and in less time.
+- Integration: Compatible with CI/CD tools such as Jenkins to integrate tests into the development flow.
+**Disadvantages
+- Limitation to Web Applications: Selenium can only automate applications in web browsers, not desktop applications.
+- Maintenance: Tests can break if the user interface changes, requiring constant maintenance of scripts.
+- Learning Curve: Requires programming knowledge and understanding of web architecture.
 
 
-Selenium ofrece siete **tipos de localizadores** para interactuar con aplicaciones web, esenciales para realizar acciones como clics, deslizamientos y entradas de texto en pruebas automatizadas. Estos localizadores se dividen en simples y avanzados:
+Selenium offers seven **types of locators** for interacting with web applications, essential for performing actions such as clicks, swipes and text inputs in automated tests. These locators are divided into simple and advanced:
 
-- **Localizadores Simples:**
+ -  **Simple Locators:** 
+*By.id () :* Locate an element  by “id” attribute.
+*By.id():* Locates an element by the “id” attribute.
+*By.name():* Locate by “name” attribute.
+*By.tagName():* Locate by the tag name (e.g. input).
+*By.className():* Locate by a CSS class of the element.
+*By.linkText()* and *By.partialLinkText():* Locate links by their exact or partial text.
 
-*By.id():* Localiza un elemento por el atributo "id".
+-  **Advanced Locators:** 
+*By.cssSelector()* and *By. cssSelector( )*.
+*By.cssSelector():* Locate elements using CSS selectors.
+*By.xPath():* Locate elements using XPath expressions.
 
-*By.name():* Localiza por el atributo "name".
+- **Relative Locators:**
+Useful when elements are difficult to identify, they allow you to locate elements relative to each other. Examples:
+*RelativeLocator.with(By.tagName()).above(By.id()):* Locates one element above another.
+*RelativeLocator.with(By.tagName()).below(By.id()):* Locates one element below another.
+*RelativeLocator.with(By.tagName()).toLeftOf(By.id()):* Locates an element to the left of another.
+*RelativeLocator.with(By.tagName()).toRightOf(By.id()):* Locates one element to the right of another.
+These locators make Selenium versatile and accurate for testing complex interfaces.
 
-*By.tagName():* Localiza por el nombre del tag (ej. input).
+## Selenium WebDriver Practical Session
 
-*By.className():* Localiza por una clase CSS del elemento.
+## Installations
+Download and configure the JDK (**Windows**):
 
-*By.linkText()* y *By.partialLinkText():* Localiza enlaces por su texto exacto o parcial.
-
-- **Localizadores Avanzados:**
-
-*By.cssSelector():* Localiza elementos usando selectores CSS.
-
-*By.xPath():* Localiza elementos usando expresiones XPath.
-
-- **Localizadores Relativos:**
-
-Útiles cuando los elementos son difíciles de identificar, permiten localizar elementos en relación a otros. Ejemplos:
-
-*RelativeLocator.with(By.tagName()).above(By.id()):* Localiza un elemento sobre otro.
-
-*RelativeLocator.with(By.tagName()).below(By.id()):* Localiza un elemento debajo de otro.
-
-*RelativeLocator.with(By.tagName()).toLeftOf(By.id()):* Localiza un elemento a la izquierda de otro.
-
-*RelativeLocator.with(By.tagName()).toRightOf(By.id()):* Localiza un elemento a la derecha de otro.
-
-Estos localizadores hacen que Selenium sea versátil y preciso para el testing de interfaces complejas.
-
-
-
-## Sesion Práctica Selenium WebDriver
-
-
-## Instalaciones
-
-1. Descargar y configurar el JDK (**Windows**):
-
-- **Descargar JDK:**
-        - Ve al sitio web oficial de Oracle ([oracle.com](https://www.oracle.com/java/technologies/downloads/)) y descarga el instalador del JDK adecuado para tu versión de Windows (32 o 64 bits).
+ - **Download JDK:**
+        - Go to the official Oracle website ([oracle.com](https://www.oracle.com/java/technologies/downloads/)) and download the JDK installer appropriate for your version of Windows (32-bit or 64-bit).
         
-- **Ejecutar el Instalador:**
-        - Abre el archivo descargado y sigue las instrucciones del instalador. Durante la instalación, puedes cambiar la ruta de instalación o dejarla por defecto.
+- **Run the Installer:** 
+        - Open the downloaded file and follow the installer instructions. During the installation, you can change the installation path or leave it as default.
         
-- **Configurar el PATH (Opcional):**
-        - Para poder ejecutar Java desde cualquier lugar en la línea de comandos, debes agregar la ruta del JDK al PATH de tu sistema.
-        - Busca "Variables de entorno" en la configuración del sistema y agrega la ruta del directorio bin del JDK (por ejemplo, C:\Program Files\Java\jdk-11\bin) a la variable PATH.
+-  **Configure the PATH (Optional):** 
+        - To be able to run Java from anywhere on the command line, you must add the JDK path to your system's PATH.
+        - Look for “Environment Variables” in the system configuration and add the path to the JDK bin directory (e.g., C:\Program Files\Java\jdk-11\bin) to the PATH variable.
 
-2. Gradle
 
-- **Descargar el instalador**: Ve a la página oficial de [gradle.org](https://gradle.org/install/) descarga y ejecuta el instalador
-- **Extrae el Archivo ZIP**: Descomprime el archivo ZIP descargado en una carpeta en tu sistema, por ejemplo, `C:\Gradle`, la carpeta descomprimida debe contener subcarpetas como `bin` y `lib`
-- **Configura la variable de entorno**: 
-	- Abre el menú **Inicio**, escribe `variables de entorno`, y selecciona **Editar las variables de entorno del sistema**.
-	- En la ventana de Propiedades del sistema, haz clic en **Variables de entorno**.
-	- En **Variables del sistema**, busca la variable `Path` y haz clic en **Editar**.
-	- Haz clic en **Nuevo** e ingresa la ruta de la carpeta `bin` de Gradle, por ejemplo: `C:\Gradle\gradle-<versión>\bin`.
-	- Haz clic en **Aceptar** en todas las ventanas para guardar los cambios
+ 2. Gradle
+    - **Download the installer**: Go to the official website of [gradle.org](https://gradle.org/install/) download and run the installer.
+    - **Extract the ZIP File**: Unzip the downloaded ZIP file to a folder on your system, for example, `C:Gradle`, the unzipped folder should contain subfolders such as `bin` and `lib`.
+    - **Set the environment variable**: 
+    - Open the **Start** menu, type `environment variables`, and select **Edit System Environment Variables**.
+    - In the System Properties window, click **Environment Variables**.
+    - Under **System Variables**, find the `Path` variable and click **Edit**.
+    - Click **New** and enter the path to the Gradle `bin` folder, for example: `C:Gradle Gradle-<version>bin`.
+    - Click **OK** in all windows to save the changes.
 
-3. Verifica la instalación:
-- Ve a tu ventana de comandos y escribe:
+Verify the installation:
+3. Go to your command window and type:
+
 
 ```
 java -version
@@ -135,8 +110,9 @@ Deberías obtener una respuesta así:
 
 ![](./design/image2.png)
 
-4. Extensiones:
-- Abre Visual Studio Code e instala las siguientes extensiones:
+4. Extensions:
+- Open Visual Studio Code and install the following extensions:
+
 
     ![](./design/image3.png)
 
@@ -144,9 +120,11 @@ Deberías obtener una respuesta así:
 
   
 
-## Primer proyecto
+ 
+## First project
 
-1. Abrir VSC y en la paleta de comandos escribir Java > Seleccionar la opción Gradle: Create a Gradle Java Project > Seleccionar  la carpeta de tu preferencia donde se creará el proyecto> Selecionar Groovy > Dar un nombre al proyecto > Enter. 
+1. Open VSC and in the command palette type Java > Select Gradle: Create a Gradle Java Project > Select the folder of your choice where the project will be created > Select Groovy > Name the project > Enter. 
+
 
 ![](./design/image8.png)
 
@@ -156,10 +134,10 @@ Deberías obtener una respuesta así:
 
 
 
-2. Organiza tu proyecto:
-- Saca la carpeta src de app
-- Borra los archivos App.java y AppTest.java
-- Verifica que tu proyecto cuente con un archivo build.gradle, sino es así, crealo e inserta las siguientes configuraciones:
+2. Organize your project:
+- Take out the src folder of app.
+- Delete the App.java and AppTest.java files.
+- Verify that your project has a build.gradle file, if not, create it and insert the following configurations:
 
 ```build.gradle
 plugins {
@@ -191,7 +169,8 @@ test {
 
 ```
 [Maven](https://mvnrepository.com/)
-- Desde tu terminal ejecuta 
+  
+- From your terminal run 
 
 ```
 gradle build
@@ -201,11 +180,11 @@ gradle build
 gradle clean
 ```
 
-o desde la extensión para gradle:
+or from the gradle extension:
 
 ![](./design/image11.png)
 
-3.  Crea el archivo principal de tu proyecto en este caso CoffeTech.java en el carpeta pages con este código: 
+ 3.  Create the main file of your project in this case CoffeTech.java in the pages folder with this code: 
 
 ```java
 
@@ -253,8 +232,8 @@ public class CoffeeTechTest {
 }
 
 ```
-
-Ejecuta la prueba dando clic en el botón verde al lado de test, verás como se abre una ventana de Chrome en nuestra página de prueba https://coffeetech.netlify.app. En la terminal podrás ver los resultados de la prueba mostrando un icono de check cuando la prueba es exitosa. 
+ 
+Run the test by clicking on the green button next to test, you will see a Chrome window open on our test page https://coffeetech.netlify.app. In the terminal you will see the test results showing a check icon when the test is successful. 
 
 ![](./design/image12.png)
 
