@@ -13,7 +13,7 @@ Is an open source **test automation** tool designed for testing web applications
  ### Automated testing with Selenium Web Driver
 Automating repetitive tasks and ensuring that a web application works correctly after every code change saves time, detects errors faster, and ensures application stability across multiple browsers and devices. 
 
- #### Types of tests
+ #### Tests
 -  **Functional Tests:** 
 These tests verify that the application's functionalities behave as expected. For example, making sure that a login form allows correct access to the system.
 -  **Regression Tests:** 
@@ -31,6 +31,18 @@ Tool for managing the building, testing, packaging and deployment of application
 -  **Build Scripts (`build.gradle`)**: Gradle projects are configured through script files called `build.gradle` (for Groovy) or `build.gradle.kts` (for Kotlin). In these files, tasks such as compiling, testing, packaging or running the application are defined.
 -  **Tasks**: Gradle organizes the build process into `tasks`, which are individual actions, such as compiling the code or running tests. You can execute specific tasks (e.g. `gradle build`, `gradle test`) or group them into workflows.
 -  **Dependencies**: In the configuration file, you can specify external dependencies that Gradle will automatically download. This allows you to manage library versions and facilitates the maintenance of dependencies in the project.
+
+
+### Using Gradle with Selenium WebDriver offers these key advantages:
+
+- **Dependency Management:** Automatically handles Selenium and other libraries, ensuring consistency.
+- **Automation:** Streamlines tasks like compiling and running tests.
+Parallel Execution: Runs tests faster across multiple browsers/environments.
+- **CI/CD** Integration: Works seamlessly with Jenkins, GitLab, and others for automated testing.
+- **Incremental Builds:** Only re-tests modified components, saving time.
+- **Customizability:** Easily tailored for specific testing needs.
+- **Detailed Reports:** Provides clear test results and performance insights.
+Gradle makes Selenium testing frameworks efficient, flexible, and CI-ready.
 
  ### Advantages and Disadvantages of Selenium WebDriver
 **Advantages:**

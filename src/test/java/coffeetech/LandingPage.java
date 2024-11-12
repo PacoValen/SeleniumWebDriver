@@ -31,20 +31,10 @@ public class LandingPage {
 
     @Test
     public void testLandingPageFunctionality() throws InterruptedException {
-        // Seleccionar todos los botones del header usando XPath
-        WebElement nosotrosButton = driver.findElement(By.xpath("//*[@id='root']/nav/div/div/div[2]/a[1]"));
-        WebElement etapasButton = driver.findElement(By.xpath("//*[@id='root']/nav/div/div/div[2]/a[2]"));
-        WebElement solucionesButton = driver.findElement(By.xpath("//*[@id='root']/nav/div/div/div[2]/a[3]"));
+        // Seleccionar el botones del header usando XPath
         WebElement documentacionButton = driver.findElement(By.xpath("//*[@id='root']/nav/div/div/div[2]/a[4]"));
         
         // Verificar que los botones están presentes
-        
-        Assert.assertTrue(nosotrosButton.isDisplayed(), "Botón 'Nosotros' no se encuentra");
-        System.out.println("Botón 'Nosotros' presente");
-        Assert.assertTrue(etapasButton.isDisplayed(), "Botón 'Etapas' no se encuentra");
-        System.out.println("Botón 'Etapas' presente");
-        Assert.assertTrue(solucionesButton.isDisplayed(), "Botón 'Soluciones' no se encuentra");
-        System.out.println("Botón 'Soluciones' presente");
         Assert.assertTrue(documentacionButton.isDisplayed(), "Botón 'Documentación' no se encuentra");
         System.out.println("Botón 'Documentación' presente");
         

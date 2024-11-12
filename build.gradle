@@ -11,7 +11,7 @@ repositories {
 
 dependencies {
     // Selenium WebDriver
-    implementation 'org.seleniumhq.selenium:selenium-java:4.25.0'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.26.0'
 
     // WebDriverManager para la administración automática del driver
     implementation 'io.github.bonigarcia:webdrivermanager:5.9.2'
