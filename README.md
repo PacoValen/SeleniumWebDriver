@@ -3,25 +3,24 @@
 Is an open source **test automation** tool designed for testing web applications. It allows testers and developers to create scripts to automate user interactions in browsers such as Chrome, Firefox, Safari, and Edge, simulating actions such as clicks, text input, and navigation between pages.
 
  ### Selenium's main components
--  Selenium WebDriver**: It is a **library** that allows you to write scripts in several programming languages (such as Java, Python, C#, and JavaScript) and control the browser directly. It is ideal for functional and user interface testing in web applications.
+-  **Selenium WebDriver**: It is a **library** that allows you to write scripts in several programming languages (such as Java, Python, C#, and JavaScript) and control the browser directly. It is ideal for functional and user interface testing in web applications.
     
--  Selenium IDE**: A **record and playback** testing  tool that allows users to create scripts without writing code. It is useful for creating quick scripts, but with limited functionality.
+-  **Selenium IDE**: A **record and playback** testing  tool that allows users to create scripts without writing code. It is useful for creating quick scripts, but with limited functionality.
     
--  Selenium Grid**: Allows tests to be run on multiple browsers and operating systems simultaneously. It is useful for compatibility testing in different environments and speeding up test execution time.
+-  **Selenium Grid**: Allows tests to be run on multiple browsers and operating systems simultaneously. It is useful for compatibility testing in different environments and speeding up test execution time.
 
 
  ### Automated testing with Selenium Web Driver
 Automating repetitive tasks and ensuring that a web application works correctly after every code change saves time, detects errors faster, and ensures application stability across multiple browsers and devices. 
 
  #### Types of tests
--  Functional Tests:** ** Functional Tests
+-  **Functional Tests:** 
 These tests verify that the application's functionalities behave as expected. For example, making sure that a login form allows correct access to the system.
--  Regression Tests:** Regression tests:** Regression tests are those that  verify that the application's functionality behaves as expected.
+-  **Regression Tests:** 
 Regression tests are those that are performed every time a change is made to the code to ensure that existing functionality is not affected. Selenium is ideal for this type of testing as it automates the verification process for each release.
--  Integration Testing
+-  **Integration Testing**
 Integration tests verify that the modules of an application work together. For example, that the login, navigation and dashboard access are correctly integrated into the system.
-
- - **Browser Compatibility Testing:**
+- **Browser Compatibility Testing:**
 Selenium allows you to run tests in different browsers (Chrome, Firefox, Edge, Safari), which is essential to ensure that the application works correctly in all environments.
 
 
@@ -29,16 +28,16 @@ Selenium allows you to run tests in different browsers (Chrome, Firefox, Edge, S
 Tool for managing the building, testing, packaging and deployment of applications. 
 
 ### How Gradle Works
--  Build Scripts (`build.gradle`)**: Gradle projects are configured through script files called `build.gradle` (for Groovy) or `build.gradle.kts` (for Kotlin). In these files, tasks such as compiling, testing, packaging or running the application are defined.
--  Tasks**: Gradle organizes the build process into `tasks`, which are individual actions, such as compiling the code or running tests. You can execute specific tasks (e.g. `gradle build`, `gradle test`) or group them into workflows.
--  Dependencies**: In the configuration file, you can specify external dependencies that Gradle will automatically download. This allows you to manage library versions and facilitates the maintenance of dependencies in the project.
+-  **Build Scripts (`build.gradle`)**: Gradle projects are configured through script files called `build.gradle` (for Groovy) or `build.gradle.kts` (for Kotlin). In these files, tasks such as compiling, testing, packaging or running the application are defined.
+-  **Tasks**: Gradle organizes the build process into `tasks`, which are individual actions, such as compiling the code or running tests. You can execute specific tasks (e.g. `gradle build`, `gradle test`) or group them into workflows.
+-  **Dependencies**: In the configuration file, you can specify external dependencies that Gradle will automatically download. This allows you to manage library versions and facilitates the maintenance of dependencies in the project.
 
  ### Advantages and Disadvantages of Selenium WebDriver
-Advantages:** **
+**Advantages:**
 - Flexibility: Supports multiple languages and browsers.
 - Fast Automation: Allows to run many tests in parallel and in less time.
 - Integration: Compatible with CI/CD tools such as Jenkins to integrate tests into the development flow.
-**Disadvantages
+**Disadvantages**
 - Limitation to Web Applications: Selenium can only automate applications in web browsers, not desktop applications.
 - Maintenance: Tests can break if the user interface changes, requiring constant maintenance of scripts.
 - Learning Curve: Requires programming knowledge and understanding of web architecture.
@@ -46,7 +45,7 @@ Advantages:** **
 
 Selenium offers seven **types of locators** for interacting with web applications, essential for performing actions such as clicks, swipes and text inputs in automated tests. These locators are divided into simple and advanced:
 
- -  **Simple Locators:** 
+-  **Simple Locators:** 
 *By.id () :* Locate an element  by “id” attribute.
 *By.id():* Locates an element by the “id” attribute.
 *By.name():* Locate by “name” attribute.
